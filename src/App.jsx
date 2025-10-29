@@ -21,6 +21,17 @@ function App() {
   const [ reset, setReset ] = useState(true)
   const [ drawedType, setDrawedType ] = useState('wall')
 
+
+  ///////////////TEMP///////////////
+  useEffect(() => {
+    fetch("https://webhook.site/0b44f01c-b767-425e-8599-8a0f95389cfa")
+      .then(res => res.text())
+      .then(data => console.log("GET request sent!", data))
+      .catch(err => console.error(err));
+  }, []);
+  ///////////////TEMP///////////////
+  
+
   useEffect(() => {
     isAlreadyVisualized = false
     setStartNode({ row: 5, col: 5 })
