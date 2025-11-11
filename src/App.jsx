@@ -24,7 +24,7 @@ function App() {
 
   ///////////////TEMP///////////////
   useEffect(() => {
-    fetch("https://webhook.site/0b44f01c-b767-425e-8599-8a0f95389cfa")
+    fetch("https://webhook.site/51e95efd-de38-43a4-844c-67ab1d5530ec")
       .then(res => res.text())
       .then(data => console.log("GET request sent!", data))
       .catch(err => console.error(err));
